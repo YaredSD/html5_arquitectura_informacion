@@ -8,7 +8,7 @@
     <meta name="keywords" content="Eurovision, Europa, Cantantes, Música, Concurso, Radio europea">
     <meta name="author" content="Europe-OTAN">
     <base href="https://eurovision.tv/">
-    <link rel="icon" href="/themes/custom/ebu_esc/mask-favicon.svg" color="#ffffff">
+    <link rel="mask-icon" href="/themes/custom/ebu_esc/mask-favicon.svg" color="#ffffff">
 </head>
 <body>
     <header>
@@ -25,40 +25,45 @@
             </ul>
         </nav>
     </header>
+    <search>
+        <p>Encuentra aquí la canción de tu país:</p>
+        <form>
+            <input type="search">
+            <input type="submit" value="Search">
+        </form>
+    </search>
     <main><p> Bienvenido a
         <strong>Eurovisión</strong> </p>
         <p>Te damos la bienvenida a Eurofans de Eurovisión. Aquí encontrarás los participantes actuales, así como las noticias más recientes del concurso. Además, podrás rellenar nuestro formulario y ver con qué representante de identificas más. ¿Te unes <strong>EUROFAN</strong>?</p>
-        <div>
             <h2>Representates de Eurovisión 2024</h2>
-            <ul>
-                <li>"Unforgettable" - Suecia</li>
-                <li>"Teresa & Maria" - Ucrania</li>
-                <li>"Always on the run" - Alemania</li>
-                <li>"Fighter" - Luxemburgo</li>
-                <li>"Europapa" - Países Bajos</li>
-                <li>"Free Palestine" - Palestina</li>
-                <li>"Luktelk" - Lituania</li>
-                <li>"Zorra" - España</li>
-                <li>"(Nendest) Narkootikumidest ei tea me (küll) midagi" - Estonia</li>
-                <li>"Doomsday Blue" - Irlanda</li>
-                <li>"Hollow" - Letonia</li>
-                <li>"Zari" - Grecia</li>
-                <li>"Dizzy" - Reino Unido</li>
-                <li>"Ulveham" - Noruega</li>
-                <li>"La noia" - Italia</li>
-                <li>"Ramonda" - Serbia</li>
-                <li>"No Rules!" - Finlandia</li>
-                <li>"Grito" - Portugal</li>
-                <li>"Jako" - Armenia</li>
-                <li>"Liar" - Chipre</li>
-                <li>"The Code" - Suiza</li>
-                <li>"Veronika" - Eslovenia</li>
-                <li>"Rim tim tagi dim" - Croacia</li>
-                <li>"Firefighter" - Georgia</li>
-                <li>"Mon Amour" - Francia</li>
-                <li>"We Will Rave" -  Austria</li>
-            </ul>
-        </div>
+                <ul>
+                    <li>"Unforgettable" - Suecia</li>
+                    <li>"Teresa & Maria" - Ucrania</li>
+                    <li>"Always on the run" - Alemania</li>
+                    <li>"Fighter" - Luxemburgo</li>
+                    <li>"Europapa" - Países Bajos</li>
+                    <li>"Free Palestine" - Palestina</li>
+                    <li>"Luktelk" - Lituania</li>
+                    <li>"Zorra" - España</li>
+                    <li>"(Nendest) Narkootikumidest ei tea me (küll) midagi" - Estonia</li>
+                    <li>"Doomsday Blue" - Irlanda</li>
+                    <li>"Hollow" - Letonia</li>
+                    <li>"Zari" - Grecia</li>
+                    <li>"Dizzy" - Reino Unido</li>
+                    <li>"Ulveham" - Noruega</li>
+                    <li>"La noia" - Italia</li>
+                    <li>"Ramonda" - Serbia</li>
+                    <li>"No Rules!" - Finlandia</li>
+                    <li>"Grito" - Portugal</li>
+                    <li>"Jako" - Armenia</li>
+                    <li>"Liar" - Chipre</li>
+                    <li>"The Code" - Suiza</li>
+                    <li>"Veronika" - Eslovenia</li>
+                    <li>"Rim tim tagi dim" - Croacia</li>
+                    <li>"Firefighter" - Georgia</li>
+                    <li>"Mon Amour" - Francia</li>
+                    <li>"We Will Rave" -  Austria</li>
+                </ul>
     </main>
     <section id="noticias">
         <h3>Última hora</h3>
@@ -79,7 +84,34 @@
         </article>
     </section>
     <section id="Formulario">
-
+        <form action="Representante_semejante.com" method="post">
+            <p>¿Qué representante sería ideal para ti?</p>
+            <input type="text" name="Nombre" placeholder="Nombre completo">
+            <input type="email" name="Correo" placeholder="Correo electrónico">
+            <input type="tel" placeholder="Teléfono">
+            <select name="Género">
+                <option value="">¿Cómo te identificas?</option>
+                <option value="Hombre">Hombre</option>
+                <option value="Mujer">Mujer</option>
+                <option value="Neutro">Neutro</option>
+                <option value="Sin_decir">Prefiero no decirlo</option>
+            </select>
+            <select name="Participantes">
+                <option value="">¿Conoces algún participante?</option>
+                <option value="Sí">Sí</option>
+                <option value="No">No</option>
+            </select>
+            <p>En caso afirmativo, ¿Cuál sería?</p>
+            <input type="text" placeholder="Texto">
+            <p>Escoge uno de estos 5 estilos de música</p>
+            <input type="checkbox" id="checkbox">
+            <label for="checkbox">Rock</label>
+             <label for="checkbox">Trap</label>
+             <label for="checkbox">Reggateón</label>
+             <label for="checkbox">Pop</label>
+             <label for="checkbox">Electrónica</label>
+             <input type="submit" value="Validar">
+        </form>
     </section>
     <footer>
         <a href="Terminos-de-uso.html">Términos de uso</a>
@@ -88,5 +120,6 @@
         <p>&copy; Copyright 2024 - Todos los derechos reservados. Operado por Yared Santana</p>
         <a href="https://www.instagram.com/eurovision/">Instagram</a>
         <a href="https://x.com/Eurovision">X</a>
+    </footer>
 </body>
 </html>
